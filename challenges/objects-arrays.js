@@ -73,6 +73,12 @@ const graduates = [
 Once you have the new array created, sort the universities alphabetically and log the result. */
 
 const universities = [];
+for(let i=0; i < graduates.length; i++) {
+  if(graduates[i].university) {
+    universities.push(graduates[i].university);
+  }
+  universities.sort();
+}
 console.log(universities);
 
 /* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
@@ -81,7 +87,15 @@ The resulting contact information strings should have a space between the first 
 "Josh josh@example.com"
 
 Log the result of your new array. */
-const contactInfo = [graduates.first_name, graduates.email];
+const contactInfo = [];
+for(let i=0; i < graduates.length; i++) {
+  if(graduates[i].first_name) {
+    contactInfo.push(graduates[i].first_name);
+  }
+  if(graduates[i].emai) {
+    contactInfo.push(graduates[i].email);
+  }
+}
 console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
@@ -112,6 +126,7 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
+displayNames.forEach
 console.log(displayNames);
 
 /* Request 2: .map()
