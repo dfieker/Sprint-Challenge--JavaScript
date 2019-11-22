@@ -50,7 +50,7 @@ console.log(dino1.period);
 
 console.log(dino3.roar);
 
-
+console.log('###########EndofObjects##############');
 // ==== Arrays ====
 
 // Given an array of college graduates.  Complete the following requests using any array method you like
@@ -87,16 +87,9 @@ The resulting contact information strings should have a space between the first 
 "Josh josh@example.com"
 
 Log the result of your new array. */
-const contactInfo = [];
-for(let i=0; i < graduates.length; i++) {
-  if(graduates[i].first_name) {
-    contactInfo.push(graduates[i].first_name);
-  }
-  if(graduates[i].emai) {
-    contactInfo.push(graduates[i].email);
-  }
-}
-console.log(contactInfo);
+// const contactInfo = []; {
+  // return graduates.map(graduates.first_name, graduates.email)};
+// console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = [];
@@ -152,7 +145,8 @@ The zoos need to know their total animal population across the United States. Fi
 
 */
 const populationTotal = 0;
-console.log(populationTotal);
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
+console.log(populationTotal.reducer());
 
 
 /*
